@@ -3,7 +3,7 @@ import React from 'react'
 
 const AddToCard = () => {
     return (
-        <button onClick={() => console.log('Clicked')}>Add 2 card</button>
+        <button className='btn btn-primary' onClick={() => console.log('Clicked')}>Add 2 card</button>
     )
 }
 
