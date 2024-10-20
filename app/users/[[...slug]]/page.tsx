@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import UserTable from '../UserTable';
 
 interface Props {
@@ -7,7 +7,7 @@ interface Props {
   };
 }
 
-const usersSortingPage = ({ searchParams: { sortOrder } }: Props) => {
+const UsersPage = ({ searchParams: { sortOrder } }: Props) => {
   return (
     <>
       <h1>Users</h1>
@@ -16,4 +16,4 @@ const usersSortingPage = ({ searchParams: { sortOrder } }: Props) => {
   )
 }
 
-export default usersSortingPage
+export default UsersPage

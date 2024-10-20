@@ -1,2 +1,14 @@
 tailwind.css
 <div className='p-5 my-5 bg-sky-400 text-white text-xl hover:bg-sky-500'>
+
+
+suspend and showing the loading page 
+      <Suspense fallback={<p>Loading...</p>}>
+        <UserTable sortBy={sortOrder} />
+      </Suspense>
+
+
+router
+    useRouter from next/navigation
+    const router = useRouter();
+    router.push('/')
